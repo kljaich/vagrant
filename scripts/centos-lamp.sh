@@ -1,4 +1,4 @@
-#!/bin/bash.sh
+#!/bin/bash
 
 # Update CentOS with any patches, exclude kernal packages
 yum update -y --exclude=kernal
