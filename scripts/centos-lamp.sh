@@ -37,5 +37,12 @@ mysql -u root -e "SHOW DATABASES";
 
 # Download Starter Content
 
+# First go to /vagrant directory (as root)
+cd /vagrant
+
+# Copy files as vagrant login/account (not as root).  Note, -q quite mode
+sudo vagrant wget -q https://raw.githubusercontent.com/kljaich/vagrant/master/files/index.html
+sudo vagrant wget -q https://raw.githubusercontent.com/kljaich/vagrant/master/files/info.php
+
 # Restart Apache
 service httpd restart
